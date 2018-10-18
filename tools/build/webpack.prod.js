@@ -10,7 +10,7 @@ module.exports = {
 	},
 	output: {
 		path: $.root('dist'),
-		filename: '[name]/[name].js',
+		filename: '[name]/index.js',
 		libraryTarget: 'commonjs2'
 	},
 	module: {
