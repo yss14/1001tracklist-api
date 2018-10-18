@@ -1,0 +1,7 @@
+{
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

@@ -1,0 +1,16 @@
+﻿{
+	"extends": [
+		"backend-tslint-rules"
+	],
+	"rules": {
+		"indent": [
+			true,
+			"tabs",
+			4
+		],
+		"curly": false,
+		"array-type": false,
+		"ordered-imports": false,
+		"no-null-keyword": false
+	}
+}
