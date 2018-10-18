@@ -6,7 +6,7 @@
 			"methods": [
 				"get"
 			],
-			"authLevel": "function",
+			"authLevel": "anonymous",
 			"direction": "in",
 			"name": "req"
 		},
