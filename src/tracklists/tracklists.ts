@@ -2,6 +2,7 @@ import { Context, HttpMethod, HttpRequest, HttpResponse, HttpStatusCode } from '
 import { JSDOM } from 'jsdom';
 import * as rp from 'request-promise';
 import { makeError } from '../utils/make-error';
+import { decodeHTMLEntities } from '../utils/decode-html';
 
 interface ITracklistLink {
 	title: string;
@@ -48,7 +49,7 @@ export const run = async (context: Context, req: HttpRequest): Promise<void> => 
 						results: tracklistLinkWrappers
 							.map((tlLinkWrapper): HTMLAnchorElement => tlLinkWrapper.querySelector('a') as HTMLAnchorElement)
 							.map((child): ITracklistLink => ({
-								title: child.innerHTML,
+								title: child.innerText || decodeHTMLEntities(child.innerHTML),
 								link: `https://www.1001tracklists.com${child.href}`
 							}))
 					},
