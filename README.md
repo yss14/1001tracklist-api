@@ -1,4 +1,7 @@
 # 1001tracklist-api
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/yss14/1001tracklist-api.svg)](https://greenkeeper.io/)
+
 A small REST API providing some functionality to fetch data from `1001tracklist.com`.
 
 ## Documentation
